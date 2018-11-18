@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<title>My blog</title>
+		<link href="style.css" rel="stylesheet">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/superslide.2.1.js"></script>
+	</head>
+	<body>
+	<header style="position:fixed; width:100%; background-color:rgba(0,0,0,0.9); left:0; top:0; height:9%; z-index:1;">
+<div id="cssmenu">
+    <ul>
+        <li class="active"><a href="main.html"><span>Home</span></a></li>
+        <li><a href="#"><span>DPA</span></a></li>
+        <li><a href="#"><span>ZNO</span></a></li>
+		 <li><a href="#"><span>About ME</span></a></li>
+		  <li><a href="#"><span>For parents</span></a></li>
+		   <li><a href="#"><span>Pupil.Video</span></a></li>
+        <li class="last"><a href="#"><span>Presentation</span></a></li>
+    </ul>
+</div>
+	</header>
+	<p style="color:white;">f</p>
+	<p style="color:white;">f</p>
+	<h6 style="color:white;">f</h6>
+	<div class="slider">
+  <div class="bd">
+    <ul style="padding-top:10%;">
+      <li><a target="_blank" href=""><img src="imgmain/fon.jpg" /></a></li>  
+      <li><a target="_blank" href=""><img src="images/3.jpg" /></a></li>
+      <li><a target="_blank" href=""><img src="images/4.jpg" /></a></li>
+    </ul>
+  </div>
+  <div class="hd">
+    <ul>
+    </ul>
+  </div>
+  <div class="pnBtn prev"> <span class="blackBg"></span> <a class="arrow" href="javascript:void(0)"></a> </div>
+  <div class="pnBtn next"> <span class="blackBg"></span> <a class="arrow" href="javascript:void(0)"></a> </div>
+</div>
+<script type="text/javascript">
+jQuery(".slider .bd li").first().before( jQuery(".slider .bd li").last() );
+jQuery(".slider").hover(function(){
+	 jQuery(this).find(".arrow").stop(true,true).fadeIn(300) 
+	 },function(){ 
+	 	jQuery(this).find(".arrow").fadeOut(300) });				
+	 jQuery(".slider").slide(
+	 	{ titCell:".hd ul", mainCell:".bd ul", effect:"leftLoop",autoPlay:true, vis:3,autoPage:true, trigger:"click"}
+	);
+	
+</script>
+<section class="portfolio-container">
+        <ul class="portfolio-items">
+                <li class="img_item">
+                        <div class="caption">
+                                <h3>Название 1</h3>
+								 <p>___________________________________________________________________________</p>
+                                <p>Тут помещается любой текст описывающий данное изображение более подробно.</p>
+                             
+                        </div>
+                       <img src="imgmain/cont.jpg" width="100%" height="40%">
+                </li>
+          
+        </ul><!-- Конец .portfolio-items -->
+</section><!-- Конец .portfolio-container -->
+
+      <div class="photobox photobox_type3">
+        <div class="photobox__previewbox">
+          <img src="imgmain/img2.jpg" class="photobox__preview" alt="Preview" style="width:100%; height:50%;">
+		 
+		  
+          <span class="photobox__label">Тут має бути ТЕКСТ</span>
+        </div>
+      </div>
+
+      <div class="photobox photobox_type4">
+	  
+        <div class="photobox__previewbox">
+
+      
+	<li>
+	</li>
+	</body>
+</html>
